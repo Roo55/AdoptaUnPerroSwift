@@ -51,5 +51,14 @@ class DetailDogViewController: UIViewController {
 
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "ShowFormSegue" {
+                if let formViewController = segue.destination as? FormViewController {
+                    // Pass the name of the dog to FormViewController
+                    formViewController.mainDogName = mainDogName
+                }
+            }
+        }
+    
     
 }

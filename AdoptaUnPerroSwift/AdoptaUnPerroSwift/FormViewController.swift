@@ -9,7 +9,7 @@ import UIKit
 
 class FormViewController: UIViewController {
     
-    
+    var mainDogName: String?
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var surnameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -17,8 +17,11 @@ class FormViewController: UIViewController {
     @IBOutlet weak var switchField: UISwitch!
     @IBOutlet weak var sendButton: UIButton!
     
+    @IBOutlet weak var labelInformation: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        labelInformation.text = "You are requesting information about \(mainDogName ?? "")"
 
         // Do any additional setup after loading the view.
     }
@@ -51,7 +54,6 @@ class FormViewController: UIViewController {
                     return
                 }
                 
-                // Process the form
                 print("Form submitted successfully")
                 
                 // Return to the main view controller
