@@ -75,7 +75,7 @@ class TableViewController: UITableViewController {
 
         cell.dogName.text = dogs[indexPath.row].dogName.uppercased()
         cell.dogImage.image = dogs[indexPath.row].dogImage
-        cell.labelPulsar.text = "Press for more information"
+        cell.labelPulsar.text = "Press to know more information about \(dogs[indexPath.row].dogName)"
 
         return cell
     }

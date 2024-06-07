@@ -69,7 +69,7 @@ class FormViewController: UIViewController {
         
         func isValidPhone(_ phone: String) -> Bool {
             // Phone validation regex for Spain
-            let phoneRegEx = "^\\d{9}$"
+            let phoneRegEx = "(\\+34|0034|34)?[ -]*(6|7)[ -]*([0-9][ -]*){8}"
             let phonePred = NSPredicate(format: "SELF MATCHES %@", phoneRegEx)
             return phonePred.evaluate(with: phone)
         }
