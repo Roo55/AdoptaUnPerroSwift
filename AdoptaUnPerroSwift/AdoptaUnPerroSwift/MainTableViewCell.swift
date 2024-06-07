@@ -11,7 +11,7 @@ class MainTableViewCell: UITableViewCell {
 
     @IBOutlet weak var dogName: UILabel!
     @IBOutlet weak var dogImage: UIImageView!
-    @IBOutlet weak var buttonMoreInformation: UIButton!
+    @IBOutlet weak var labelPulsar: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
