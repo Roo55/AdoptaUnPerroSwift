@@ -53,6 +53,8 @@ class TableViewController: UITableViewController {
         detailVC.mainDogSize = dogs[selectedRow].dogSize
         detailVC.mainDogDescription = dogs[selectedRow].dogDescription
         detailVC.mainDogImage = dogs[selectedRow].dogImage
+        detailVC.mainDogWannaAdopt = "Do you want more information about " + dogs[selectedRow].dogName + "?"
+        
     }
         
     

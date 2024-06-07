@@ -17,6 +17,7 @@ class DetailDogViewController: UIViewController {
     @IBOutlet weak var detailDogSize: UILabel!
     @IBOutlet weak var detailDogImage: UIImageView!
     @IBOutlet weak var detailDogDescription: UITextView!
+    @IBOutlet weak var detailDogWannaAdopt: UILabel!
     @IBOutlet weak var detailDogMoreInformationButton: UIButton!
     
     var mainDogName: String?
@@ -25,6 +26,7 @@ class DetailDogViewController: UIViewController {
     var mainDogSize: String?
     var mainDogImage: UIImage?
     var mainDogDescription: String?
+    var mainDogWannaAdopt: String?
     var mainDogMoreInformationButton: UIButton?
     
 
@@ -37,9 +39,17 @@ class DetailDogViewController: UIViewController {
         self.detailDogSize!.text = mainDogSize
         self.detailDogImage!.image = mainDogImage
         self.detailDogDescription!.text = mainDogDescription
+        self.detailDogWannaAdopt!.text = mainDogWannaAdopt
         self.detailDogMoreInformationButton = mainDogMoreInformationButton
         
         
     }
+    
+    
+    @IBAction func requestMoreInformationButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "ShowFormSegue", sender: nil)
 
+    }
+    
+    
 }
