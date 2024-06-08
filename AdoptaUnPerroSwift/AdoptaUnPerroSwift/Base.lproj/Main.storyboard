@@ -24,25 +24,33 @@
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="383"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0yz-qt-xY1">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0yz-qt-xY1">
                                             <rect key="frame" x="20" y="68" width="353" height="224"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DogName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YD2-wz-A7h">
-                                            <rect key="frame" x="176" y="22" width="77" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelPulsar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw8-mX-TGG">
+                                            <rect key="frame" x="38" y="327" width="353" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LabelPulsar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw8-mX-TGG">
-                                            <rect key="frame" x="38" y="327" width="353" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DogName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YD2-wz-A7h">
+                                            <rect key="frame" x="154" y="21" width="85" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="uw8-mX-TGG" firstAttribute="top" secondItem="0yz-qt-xY1" secondAttribute="bottom" constant="35" id="2Uk-RI-ZNL"/>
+                                        <constraint firstItem="YD2-wz-A7h" firstAttribute="top" secondItem="tMA-Ef-f5w" secondAttribute="topMargin" constant="11" id="3a8-yA-zbl"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="uw8-mX-TGG" secondAttribute="trailing" constant="-18" id="5Rf-Fi-sqf"/>
+                                        <constraint firstItem="0yz-qt-xY1" firstAttribute="trailing" secondItem="tMA-Ef-f5w" secondAttribute="trailingMargin" id="72d-uZ-1IQ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="uw8-mX-TGG" secondAttribute="bottom" constant="24" id="TC3-gU-Xi9"/>
+                                        <constraint firstItem="uw8-mX-TGG" firstAttribute="leading" secondItem="tMA-Ef-f5w" secondAttribute="leadingMargin" constant="18" id="W3E-ao-CVY"/>
+                                        <constraint firstItem="0yz-qt-xY1" firstAttribute="leading" secondItem="tMA-Ef-f5w" secondAttribute="leadingMargin" id="Xtj-f4-uON"/>
+                                        <constraint firstItem="YD2-wz-A7h" firstAttribute="centerX" secondItem="uw8-mX-TGG" secondAttribute="centerX" id="xtw-ae-aRD"/>
+                                        <constraint firstItem="0yz-qt-xY1" firstAttribute="top" secondItem="YD2-wz-A7h" secondAttribute="bottom" constant="25" id="xyx-a0-mT6"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="dogImage" destination="0yz-qt-xY1" id="awJ-2N-IY7"/>
@@ -118,7 +126,7 @@
                                 <rect key="frame" x="16" y="479" width="353" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Request more information"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Request More Information"/>
                                 <connections>
                                     <action selector="requestMoreInformationButtonTapped:" destination="CKY-xy-RBk" eventType="touchUpInside" id="dUN-qL-ik4"/>
                                 </connections>
